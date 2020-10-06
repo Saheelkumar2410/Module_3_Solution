@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#head {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  color:black;
+}
+
+body{
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 10px;
+
+}
+
+.nav-item{
+  text-align: center;
+}
+
+
+.chicken,.beef,.sushi{
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  margin: 10px;
+  border: 1px solid black;
+  text-align: left;
+
+
+}
+
+.row {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#box1{
+  text-align: right;
+}
+
+#chic{
+  background-color: pink;
+  width: 30%;
+  text-align: center;
+  float: right;
+  border: 1px solid black;
+
+}
+
+
+#beef{
+  background-color: red;
+  float: right;
+  width: 30%;
+  text-align: center;
+  border:1px solid black;
+}
+
+#sus{
+  background-color: yellow;
+  width: 30%;
+  text-align: center;
+  float: right;
+  border: 1px solid black;
+}
+p{
+  margin: 2px;
+  padding-left: 2px;
+}
+h4{
+  border: 1px solid black;
+}
+
+.row {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .row {
+    display: flex;
+    flex-direction: row;
+  }
+  .chicbeef{
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .chicbeef{
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px){
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}
